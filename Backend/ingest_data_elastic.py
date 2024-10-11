@@ -4,7 +4,7 @@ from feature_extractor import FeatureExtractor
 from PIL import Image
 import backend_config as config
 
-index=config.index
+index=config.index_name
 fe=FeatureExtractor()
 
 # Function to connect to Elasticsearch and create an index

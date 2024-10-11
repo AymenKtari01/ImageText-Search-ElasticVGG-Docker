@@ -1,5 +1,6 @@
 
 import streamlit as st 
+from st_template import header , footer
 import st_function as sf
 import re 
 import time 
@@ -8,7 +9,7 @@ import time
 def Check_url(url):
     url_pattern = r"https?://\S+"
     return re.match(url_pattern, url) is not None
-
+header()
 #Filter Box 
 container = st.container()
 my_expander1 = st.expander("Filter", expanded=True)
@@ -68,8 +69,17 @@ if filter == "Image":
             else:
                 st.warning("Please provide an image")
 
-        
-            
+# Sentiment mapping for stars
+sentiment_mapping = ["one", "two", "three", "four", "five"]
+
+# Feedback component
+selected = st.slider("Rate your experience:", min_value=1, max_value=5, value=3)
+
+# Display feedback based on the selected rating
+if selected is not None:
+    st.markdown(f"⭐ You selected **{sentiment_mapping[selected - 1]}** star(s).")
+           
+footer()           
 # if you want to search by Booth images and Text area 
 
 # if filter == "Text & Image":
