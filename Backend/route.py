@@ -22,7 +22,7 @@ async def search_by_text(request: Request):
     text = content["tags"]
     search_type = content["type"]
     show_result = int(content["number"])
-    return utils.get_results_search_by_text(text, search_type)
+    return utils.get_results_search_by_text(text, search_type,show_result)
 #------------------------------------------------------------------------
 
 # Search by image

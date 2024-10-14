@@ -11,11 +11,11 @@ similarity_threshold = config.threshold
 
 #=====================================================================
 
-def get_results_search_by_text(query, search_type):
+def get_results_search_by_text(query, search_type,show_result):
     getreq = {
             search_type: {"tags":query}
     }
-    results = client.search(index=config.index_text, query=getreq)
+    results = client.search(index=config.index_text, query=getreq,size=show_result)
     #print(results)
     return {"resulttype": results}
 
@@ -45,7 +45,7 @@ def get_results_search_by_image(img, show_result):
     }    
     try:
         results = client.search(
-            index=config.index, body=body
+            index=config.index_name, body=body
         )
         print(results)
         return {"resulttype": results}
