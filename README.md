@@ -100,30 +100,38 @@ uvicorn route:app --reload
 
 ## 📂 **Folder Structure**
 
-```
-infra
-│
-├── docker-compose.yml
-│
-├── elastic
-│   ├── create_index.py
-│   ├── custom_cmd.sh
-│   └── Dockerfile.elastic
-│
-├── fastapi
-│   ├── Dockerfile.backend
-│   └── requirements.txt
-│
-├── logstash
-│   ├── Dockerfile.logstash
-│   └── pipeline
-│       └── logstash.conf
-│
-└── streamlit
-    ├── Dockerfile.front
-    └── requirements.txt
-```
+**Backend**
+The Backend directory contains the core components of the backend service, responsible for data ingestion, feature extraction, and API routing.
 
+
+```
+├── backend.config.py        # Configuration settings for the backend service
+├── ingest_data_elastic.py   # Script to ingest data into Elasticsearch
+├── feature_extractor.py      # Module for extracting features from the ingested data
+├── route.py                  # Defines the API routes and endpoints for the backend service
+```
+**Frontend**
+The Frontend directory includes the Streamlit application for user interaction.
+
+```
+├── app.py                    # Main entry point for the Streamlit frontend application
+```
+**Infra**
+The infra directory manages the infrastructure setup, including Docker configurations and service orchestration.
+
+```
+├── docker-compose.yml        # Docker Compose file to define and run multi-container Docker applications
+│
+├── elastic                   # Directory containing Elasticsearch related files
+│   ├── create_index.py       # Script to create indices in Elasticsearch
+│   ├── custom_cmd.sh         # Custom command script for initializing the Elasticsearch service
+│   └── Dockerfile.elastic     # Dockerfile to build the Elasticsearch image
+│
+├── logstash                  # Directory containing Logstash related files
+│   ├── Dockerfile.logstash    # Dockerfile to build the Logstash image
+│   └── pipeline               # Directory for Logstash pipeline configurations
+│       └── logstash.conf      # Configuration file defining the Logstash pipeline
+```
 ---
 
 ## 🛡️ **Environment Variables** 
