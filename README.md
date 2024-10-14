@@ -78,8 +78,21 @@ cd infra
 ```bash
 docker-compose up --build
 ```
+### 4. **Manually Run the Frontend and Backend** 
+#### 4.1 Run the Streamlit Frontend
+```bash
+cd Frontend
+streamlit run app.py
+```
+Access the Streamlit web interface at http://localhost:8501.
 
-### 4. **Access the Web Interface and API**  
+#### 4.2 Run the FastAPI Backend
+```bash
+cd Backend
+uvicorn route:app --reload
+```
+
+### 5. **Access the Web Interface and API**  
 - **Frontend (Streamlit):** Open [http://localhost:8501](http://localhost:8501).  
 - **Backend API (FastAPI):** Visit the Swagger docs at [http://localhost:8000/docs](http://localhost:8000/docs).
 
