@@ -177,3 +177,19 @@ threshold=0.2
 - **Logstash:** Automates the ingestion of structured data into Elasticsearch.
 
 ---
+## Results
+### Global Interface Description
+The interface of the image search engine is designed to be user-friendly and intuitive. It features a clean layout where users can easily access both the text and image search functionalities. Users can quickly navigate through the results, making the search experience efficient and enjoyable. The interface also allows for easy uploads of images for content-based searches, enhancing the overall usability of the application.
+![Result](images/interface.png)
+### 🔍 Search Features
+
+#### Search by Text
+- Users can enter keywords or phrases to find relevant images.
+- The search is performed against both indexed image metadata and textual descriptions.
+- Results display relevant images alongside their corresponding metadata.
+![Text](images/text.png)
+#### Search by Image
+- Users can upload an image to perform a content-based search.
+- The engine utilizes VGG16 to extract features from the uploaded image.
+- Results display similar images based on visual content similarity.
+![Image](images/image.png)

@@ -45,26 +45,31 @@ if filter == "Text":
 if filter == "Image":
     with st.form("my_form_image"):
         st.write("Please choose one of the following options to search:")
-        #Search Images by Url
-        # url = st.text_input("Search by image URL")
-        #Search Images by browse an image
+        
+        # Upload an image file
         uploaded_file = st.file_uploader("Upload a file", type=["png", "jpg"])
         submit = st.form_submit_button("Search")
+        
         if submit:
-            # if Check_url(url):
-            #     start_time = time.time()
-            #     sf.search_by_url(url, show_result)
-            #     end_time = time.time()
-            #     duration_time = end_time - start_time
-            #     duration_time_str = "{:.3f}".format(duration_time)
-            #     st.toast("Time taken: {} seconds".format(duration_time_str))
+            # Check if an image is uploaded
             if uploaded_file:
+                # Read the uploaded image file
                 uploaded = uploaded_file.read()
+                
+                # Display the uploaded image
+                st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+                st.write("The result : ")
+
+                # Start the search process
                 start_time = time.time()
-                sf.search_by_upload_image(uploaded, show_result)
+                sf.search_by_upload_image(uploaded, show_result)  # Call your search function
                 end_time = time.time()
+                
+                # Calculate duration time
                 duration_time = end_time - start_time
                 duration_time_str = "{:.3f}".format(duration_time)
+                
+                # Show the time taken for the search
                 st.toast("Time taken: {} seconds".format(duration_time_str))
             else:
                 st.warning("Please provide an image")
