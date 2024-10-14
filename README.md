@@ -7,19 +7,6 @@ This project is a high-performance **image and text search engine** leveraging *
 
 ## 📂 **Project Architecture**
 
-```mermaid
-graph LR
-A[Image Dataset / CSV Data] --> B[VGG16 Feature Extraction]
-B --> C[Feature Vectors]
-C --> D[Elasticsearch Index]
-E[User Query (Image/Text)] --> D
-D --> F[FastAPI Backend]
-F --> G[Streamlit Frontend]
-H[CSV Files] --> I[Logstash] --> D
-
-```
-
----
 
 ## 🚀 **How It Works**
 
