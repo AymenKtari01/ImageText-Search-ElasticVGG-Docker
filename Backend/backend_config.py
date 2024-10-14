@@ -6,4 +6,4 @@ elastic_usr="elastic"
 elastic_pass="elastic"
 dataPath= "../infra/data/images"
 csvPath = "dataset/photo_metadata.csv"
-threshold = 0.2
+threshold = 0.7
