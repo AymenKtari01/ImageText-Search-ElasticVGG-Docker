@@ -101,6 +101,7 @@ uvicorn route:app --reload
 ## 📂 **Folder Structure**
 
 **Backend**
+
 The Backend directory contains the core components of the backend service, responsible for data ingestion, feature extraction, and API routing.
 
 
@@ -109,14 +110,17 @@ The Backend directory contains the core components of the backend service, respo
 ├── ingest_data_elastic.py   # Script to ingest data into Elasticsearch
 ├── feature_extractor.py      # Module for extracting features from the ingested data
 ├── route.py                  # Defines the API routes and endpoints for the backend service
+├── utils.py                  # Utility functions for processing data, including image and text searches in Elasticsearch               
 ```
 **Frontend**
+
 The Frontend directory includes the Streamlit application for user interaction.
 
 ```
 ├── app.py                    # Main entry point for the Streamlit frontend application
 ```
 **Infra**
+
 The infra directory manages the infrastructure setup, including Docker configurations and service orchestration.
 
 ```
