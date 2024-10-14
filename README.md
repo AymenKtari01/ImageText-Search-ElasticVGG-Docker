@@ -197,3 +197,9 @@ The interface of the image search engine is designed to be user-friendly and int
 - Results display similar images based on visual content similarity.
 
 ![Image](images/image.png)
+
+## Contributors
+<a href="https://github.com/AnasBenAmor10/ImageText-Search-ElasticVGG-Docker/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=AnasBenAmor10/ImageText-Search-ElasticVGG-Docker" />
+  
+</a>
