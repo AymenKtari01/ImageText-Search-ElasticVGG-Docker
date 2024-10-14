@@ -125,6 +125,10 @@ The infra directory manages the infrastructure setup, including Docker configura
 
 ```
 ├── docker-compose.yml        # Docker Compose file to define and run multi-container Docker applications
+|
+├── data 
+│   ├── photo_metadata.csv   # a Flickr dataset contain image link and their metadata
+│   ├── images               # Download a dataset contain images   
 │
 ├── elastic                   # Directory containing Elasticsearch related files
 │   ├── create_index.py       # Script to create indices in Elasticsearch
