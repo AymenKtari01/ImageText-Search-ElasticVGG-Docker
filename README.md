@@ -202,6 +202,5 @@ The interface of the image search engine is designed to be user-friendly and int
 <a href="https://github.com/AnasBenAmor10/ImageText-Search-ElasticVGG-Docker/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=AnasBenAmor10/ImageText-Search-ElasticVGG-Docker" />
      <img src="https://contrib.rocks/image?repo=AymenKtari01/ImageText-Search-ElasticVGG-Docker" />
-
   
 </a>
