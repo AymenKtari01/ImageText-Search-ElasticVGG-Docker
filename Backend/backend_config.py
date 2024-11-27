@@ -1,5 +1,4 @@
 index_name = "images"
-index="allimages"
 index_text="flickrphotos"
 elastic_url="http://localhost:9200"
 elastic_usr="elastic"

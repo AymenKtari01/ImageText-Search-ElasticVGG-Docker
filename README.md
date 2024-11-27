@@ -39,7 +39,7 @@ This project is a high-performance **image and text search engine** leveraging *
 ---
 
 ## 📂 **Project Architecture**
-
+![Architecture](images/Architecture.png)
 
 ## 🚀 **How It Works**
 
