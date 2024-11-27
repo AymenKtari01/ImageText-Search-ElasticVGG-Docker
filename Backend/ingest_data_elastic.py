@@ -38,7 +38,7 @@ if __name__ == "__main__":
     es = Elasticsearch(config.elastic_url)
     create_elastic_index(es,index)
     images_path=config.dataPath
-    for i in range(10):
+    for i in range(5,10):
         new_path=f"{images_path}/{i}"
         for img_file in os.listdir(new_path):
             img_path = os.path.join(new_path, img_file)
