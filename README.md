@@ -5,8 +5,41 @@ This project is a high-performance **image and text search engine** leveraging *
 
 ---
 
-## 📂 **Project Architecture**
+## 📜 Table of Contents
 
+- [📂 Project Architecture](#-project-architecture)
+- [🚀 How It Works](#-how-it-works)
+  - [VGG16 Feature Extraction](#1-vgg16-feature-extraction)
+  - [Elasticsearch Integration](#2-elasticsearch-integration)
+  - [FastAPI Backend](#3-fastapi-backend)
+  - [Streamlit Web Interface](#4-streamlit-web-interface)
+  - [Logstash Data Ingestion](#5-logstash-data-ingestion)
+- [📸 Features](#-features)
+- [🛠️ Technology Stack](#%EF%B8%8F-technology-stack)
+- [🔧 How to Run the Project](#-how-to-run-the-project)
+  - [Prerequisites](#prerequisites)
+  - [Clone the Repository](#1-clone-the-repository)
+  - [Navigate to the Infra Folder](#2-navigate-to-the-infra-folder)
+  - [Build and Run the Project using Docker Compose](#3-build-and-run-the-project-using-docker-compose)
+  - [Manually Run the Frontend and Backend](#4-manually-run-the-frontend-and-backend)
+  - [Access the Web Interface and API](#5-access-the-web-interface-and-api)
+- [📂 Folder Structure](#-folder-structure)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
+  - [Infra](#infra)
+- [🛡️ Environment Variables](#%EF%B8%8F-environment-variables)
+- [⚙️ How the Components Work Together](#%EF%B8%8F-how-the-components-work-together)
+- [📊 Results](#-results)
+  - [Global Interface Description](#global-interface-description)
+  - [🔍 Search Features](#-search-features)
+    - [Search by Text](#search-by-text)
+    - [Search by Image](#search-by-image)
+- [🤝 Contributors](#-contributors)
+
+---
+
+## 📂 **Project Architecture**
+![Architecture](images/Architecture.png)
 
 ## 🚀 **How It Works**
 
@@ -63,8 +96,8 @@ This project is a high-performance **image and text search engine** leveraging *
 ### 1. **Clone the Repository**
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/AnasBenAmor10/ImageText-Search-ElasticVGG-Docker.git
+cd ImageText-Search-ElasticVGG-Docker
 ```
 
 ### 2. **Navigate to the Infra Folder**
