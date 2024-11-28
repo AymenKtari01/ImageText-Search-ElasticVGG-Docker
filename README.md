@@ -60,7 +60,8 @@ This project is a high-performance **image and text search engine** leveraging *
 ### 5. **Logstash Data Ingestion**  
 - **Logstash** automates the ingestion of **CSV files** and other structured data into Elasticsearch, streamlining the search process with up-to-date indexes.
 
----
+--- 
+
 
 ## 📸 **Features**
 
